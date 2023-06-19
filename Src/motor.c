@@ -34,13 +34,13 @@ void SetMotorSpeed(unsigned char ucChannel,signed char cSpeed)
 		case 0://右轮
 			if (cSpeed>0) //正转
 			{
-				sPWM = 3599 - cSpeed*36;
+				sPWM = 3601 - cSpeed*36;
 				__HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_3,sPWM);
 				RIGHT_MOTOR_RESET;
 			}
 			else if(cSpeed<0) //反转
 			{
-				sPWM = 3599 - (100+cSpeed)*36;
+				sPWM = 3601 - (100+cSpeed)*36;
 				__HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_3,sPWM);
 				RIGHT_MOTOR_SET;	
 			}	
@@ -55,13 +55,13 @@ void SetMotorSpeed(unsigned char ucChannel,signed char cSpeed)
 		case 1://左轮
 			if (cSpeed>0) //正转
 			{	
-				sPWM = 3599 - cSpeed*36;
+				sPWM = 3601 - cSpeed*36;
 				__HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_4,sPWM);
 				LEFT_MOTOR_RESET;
 			}
 			else if (cSpeed<0)//反转
 			{
-				sPWM = 3599 - (100+cSpeed)*36;
+				sPWM = 3601 - (100+cSpeed)*36;
 				__HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_4,sPWM);
 				LEFT_MOTOR_SET;
 			}

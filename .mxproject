@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/YawnFun/Documents/school/stm32/Smart_Car/Inc
+HeaderPath=C:/Users/YawnFun/Documents/project/Smart_Car_Infrared_Tracing/Inc
 HeaderFiles=gpio.h;tim.h;stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Users/YawnFun/Documents/school/stm32/Smart_Car/Src
+SourcePath=C:/Users/YawnFun/Documents/project/Smart_Car_Infrared_Tracing/Src
 SourceFiles=gpio.c;tim.c;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
